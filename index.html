@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TODO LIST</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body id="main" class="bg-white text-black transition-all duration-300">
+  <main class="min-h-screen flex items-center justify-center">
+    <div class="w-full max-w-md p-6">
+      <h1 class="text-center text-2xl font-bold mb-4">TODO LIST</h1>
+      <div class="flex gap-2 mb-4">
+        <input id="searchInput" type="text" placeholder="Search note..."
+               class="flex-grow px-3 py-2 rounded border border-gray-300 bg-white text-black outline-none dark:bg-gray-800 dark:text-white dark:border-gray-600" />
+        <button id="addBtn" class="bg-indigo-500 text-white px-4 py-2 rounded hover:bg-indigo-600">SEND</button>
+        <button id="themeToggle" class="bg-indigo-500 text-white px-3 py-2 rounded hover:bg-indigo-600">🌙</button>
+      </div>
+      <ul id="todoList" class="space-y-2"></ul>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
